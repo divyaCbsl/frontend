@@ -1,0 +1,173 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+body{
+  background-image: url("/public/background.jpg");
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+              /* This will create a black overlay with 50% opacity */
+              url("/public/background.jpg");
+  
+  /* Background size and position */
+  background-size: cover;
+  background-position: center;
+  
+  /* Ensure content is displayed above the background */
+  color: white;
+  background-size: cover; 
+  background-position: center;
+  /* background-color: rgba(255, 255, 255, 0.5); */
+  /* background-blend-mode: multiply; */
+  background-color: #a3a3a3;
+}
+body::before{
+  content: "";
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+/* App.css */
+
+.container {
+  max-width: 70%;
+  margin: 40px auto;
+  z-index: 999;
+  /* padding: 20px; */
+}
+
+input[type="text"], select {
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+button {
+  /* margin-top: 10px; */
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #5f5f5f;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  width: 254px;
+}
+
+button:hover {
+  background-color: #ff8400;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+.entity-card {
+  border-top: 10px solid #ff8400;
+  border-bottom: 10px solid #ff8400;
+  border-radius: 25px;
+  box-shadow: 0 0 4px;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.85); /* Transparent white background */
+  z-index: 999;
+  height: 430px;
+}
+.card-1{
+  background-image: url("/public/card.svg");
+  background-size: cover; 
+  background-position: center;
+  
+}
+.card-2{
+  background-image: url("/public/card1.svg");
+  background-size: cover; 
+  background-position: center;
+}
+
+
+/* Responsive styles */
+@media screen and (max-width: 600px) {
+  .container {
+    padding: 10px;
+  }
+  button{
+    width: 150px !important;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .container {
+    padding: 10px;
+  }
+  button{
+    width: 150px !important;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .container {
+    padding: 10px;
+  }
+  button{
+    width: 150px !important;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .container {
+    padding: 10px;
+  }
+  button{
+    width: 150px !important;
+  }
+}
+
