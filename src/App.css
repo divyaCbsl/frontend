@@ -67,7 +67,7 @@ body::before{
 /* App.css */
 
 .container {
-  max-width: 70%;
+  max-width: 90%;
   margin: 40px auto;
   z-index: 999;
   /* padding: 20px; */
@@ -78,7 +78,8 @@ input[type="text"], select {
   padding: 10px;
   border-radius: 5px;
   border: 1px solid #ccc;
-  font-size: 16px;
+  font-size: 25px;
+  font-weight: 600;
   width: 100%;
   box-sizing: border-box;
 }
@@ -122,7 +123,7 @@ th {
   padding: 10px;
   background-color: rgba(255, 255, 255, 0.85); /* Transparent white background */
   z-index: 999;
-  height: 430px;
+  height: 440px;
 }
 .card-1{
   background-image: url("/public/card.svg");
